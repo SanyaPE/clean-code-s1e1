@@ -31,11 +31,11 @@ let createNewTaskElement=function(taskString){
     editInput.classList.add("input", "task")
     //button.edit
     let editButton=document.createElement("button");//edit button
-    editButton.classList.add("button", "edit")
+    editButton.classList.add("btn", "edit")
 
     //button.delete
     let deleteButton=document.createElement("button");//delete button
-    deleteButton.classList.add("button", "delete")
+    deleteButton.classList.add("btn", "delete")
 
     let deleteButtonImg=document.createElement("img");//delete button image
     deleteButtonImg.classList.add("img")
@@ -162,8 +162,8 @@ let bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     let checkBox=taskListItem.querySelector(".input[type=checkbox]");
-    let editButton=taskListItem.querySelector(".button.edit");
-    let deleteButton=taskListItem.querySelector(".button.delete");
+    let editButton=taskListItem.querySelector(".btn.edit");
+    let deleteButton=taskListItem.querySelector(".btn.delete");
 
 
     //Bind editTask to edit button.
