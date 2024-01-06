@@ -51,6 +51,7 @@ let createNewTaskElement=function(taskString){
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
 
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.setAttribute("alt","")
     deleteButton.appendChild(deleteButtonImg);
 
 
